@@ -138,8 +138,8 @@ function sendUserListToAll() {
 // server.
 
 var httpsOptions = {
-  key: fs.readFileSync("/etc/pki/tls/private/mdn.key"),
-  cert: fs.readFileSync("/etc/pki/tls/certs/mdn.crt")
+  key: fs.readFileSync("./mdn.key"),
+  cert: fs.readFileSync("./mdn.crt")
 };
 
 // Our HTTPS server does nothing but service WebSocket
